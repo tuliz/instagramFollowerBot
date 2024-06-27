@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4506bf8e-e8e8-4749-b909-55475b02c744" name="Changes" comment="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following" />
+    <list default="true" id="4506bf8e-e8e8-4749-b909-55475b02c744" name="Changes" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,12 +77,21 @@
       <option name="project" value="LOCAL‎" />
       <updated>1719485642096</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1719486076667</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1719486076667</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit. create a class for the functions of using instagram. adding a function for opening and login to instagram account" />
     <MESSAGE value="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following" />
-    <option name="LAST_COMMIT_MESSAGE" value="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
