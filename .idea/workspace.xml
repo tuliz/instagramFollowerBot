@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4506bf8e-e8e8-4749-b909-55475b02c744" name="Changes" comment="first commit. create a class for the functions of using instagram. adding a function for opening and login to instagram account">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instafollower.py" beforeDir="false" afterPath="$PROJECT_DIR$/instafollower.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="4506bf8e-e8e8-4749-b909-55475b02c744" name="Changes" comment="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,11 +61,28 @@
       <option name="project" value="LOCAL‎" />
       <updated>1719476261026</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎-00002" summary="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following">
+      <option name="closed" value="true" />
+      <created>1719485623923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1719485623923</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following">
+      <option name="closed" value="true" />
+      <created>1719485642096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1719485642096</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit. create a class for the functions of using instagram. adding a function for opening and login to instagram account" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit. create a class for the functions of using instagram. adding a function for opening and login to instagram account" />
+    <MESSAGE value="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following" />
+    <option name="LAST_COMMIT_MESSAGE" value="after the login function, created a find_followers function.&#10;goes to a specific account page and opens its followers window. starts to click on the follow button and scrolling to the bottom of the window to reload more and keep following" />
   </component>
 </project>
