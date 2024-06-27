@@ -1,7 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver import Keys
+from selenium.webdriver import Keys, ActionChains
 import time
+
 
 class InstaFollower:
     def __init__(self):
@@ -20,7 +21,7 @@ class InstaFollower:
         email_input.send_keys(email)
         password_input.send_keys(password, Keys.ENTER)
 
-        # After logging in there is a messege for saving info, find the save button and click it
+        # After logging in there is a message for saving info, find the save button and click it
         time.sleep(10)
         save_info = self.driver.find_element(By.XPATH,"//button[contains(text(), 'שמירת פרטים')]")
         save_info.click()
@@ -29,3 +30,40 @@ class InstaFollower:
         time.sleep(2)
         pop_up = self.driver.find_element(By.XPATH,"//button[contains(text(), 'לא עכשיו')]")
         pop_up.click()
+
+    def find_followers(self, account):
+
+        # Go to the account you chose to find its followers
+        self.driver.get(f'https://www.instagram.com/{account}')
+        time.sleep(5)
+
+        # Get the button that opens the followers window  and click it
+        account_followers = self.driver.find_element(By.CSS_SELECTOR, 'a[href="/eran_brownstain/followers/"]')
+        account_followers.click()
+        time.sleep(2)
+
+        # Create a new ActionChains object for the scrolling
+        action = ActionChains(self.driver)
+
+        # Get all the follow buttons in the followers window
+        followers_follow_btns = self.driver.find_elements(By.XPATH, "//*[contains(text(), 'מעקב')]")
+
+        # Move the Mouse to the area of the follow buttons
+        action.move_to_element(to_element=followers_follow_btns[3])
+
+        while True:
+
+            # Each time do a loop with all the follow buttons found
+            for btn in followers_follow_btns:
+                # If its a follower you already follow pass it
+                if btn.text == 'במעקב':
+                    pass
+                else:
+                    btn.click()
+                    time.sleep(1)
+
+            # After going trough all the followers that currently are in the list,
+            # scroll down to the bottom and load more followers and get again all the follow buttons
+            action.scroll_to_element(followers_follow_btns[-2])
+            time.sleep(4)
+            followers_follow_btns = self.driver.find_elements(By.XPATH, "//*[contains(text(), 'מעקב')]")
